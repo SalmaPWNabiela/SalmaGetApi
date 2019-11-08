@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import CardUser from './CardUser'
+import {Link} from 'react-router-dom'
 
 class User extends React.Component {
     constructor(){
@@ -39,7 +40,11 @@ class User extends React.Component {
                         {renderData}
                     </tbody>
                 </table>
+                <Link className="btn btn-dark" to={'/AddUser'}>
+                    Add User
+                </Link>
             </div>
+            
         )
     }
 }

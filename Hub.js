@@ -6,6 +6,8 @@ import Home from './BrowserRouter/home'
 import User from './BrowserRouter/user'
 import Input from './BrowserRouter/input'
 import Product from './product'
+import AddUser from './AddUser'
+import AddProduct from './AddProduct';
 // import { ReactComponent } from '*.svg';
 // import { Hub } from '@babel/traverse';
 
@@ -45,6 +47,8 @@ class Hub extends React.Component{
         <br />
         <Switch>
                 <Route exact path='/home' component={ Home } />
+                <Route path='/AddUser' component={ AddUser } />
+                <Route path='/AddProduct' component={ AddProduct } />
         </Switch>
         </div>
         </Router>

@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import CardProduct from './CardProduct'
+import {Link} from 'react-router-dom'
 
 class Product extends React.Component {
     constructor(){
@@ -39,6 +40,9 @@ class Product extends React.Component {
                         {renderData}
                     </tbody>
                 </table>
+                <Link className="btn btn-dark" to={'/AddProduct'}>
+                    Add Product
+                </Link>
             </div>
         )
     }
