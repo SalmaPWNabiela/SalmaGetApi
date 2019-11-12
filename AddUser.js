@@ -25,16 +25,16 @@ class AddUser extends React.Component{
             <div className="container">
                 <form onSubmit={this.handleSubmit} >
                     <div className="form-group">
-                        <label for="product_id">Id</label>
-                        <input type="text" className="form-control" name="product_id" placeholder="Enter Id Number" onChange={this.handleChange} />
+                        <label for="id">Id</label>
+                        <input type="text" className="form-control" name="id" placeholder="Enter Id Number" onChange={this.handleChange} />
                     </div>
                     <div className="form-group">
-                        <label for="product_name">Nama Barang</label>
-                        <input type="text" className="form-control" name="product_name" placeholder="Enter Product Name" onChange={this.handleChange}/>
+                        <label for="nama">Nama</label>
+                        <input type="text" className="form-control" name="nama" placeholder="Enter Name" onChange={this.handleChange}/>
                     </div>
                     <div className="form-group">
-                        <label for="product_price">Harga Barang</label>
-                        <input type="text" className="form-control" name="product_price" placeholder="Enter Product Price" onChange={this.handleChange}/>
+                        <label for="alamat">Alamat</label>
+                        <input type="text" className="form-control" name="alamat" placeholder="Enter Address" onChange={this.handleChange}/>
                     </div>
                     <button type="submit" className="btn btn-outline-primary">Submit</button>
                     <a type="button" className="btn btn-outline-primary" href="/Home">Back</a>
